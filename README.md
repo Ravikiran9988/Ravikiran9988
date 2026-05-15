@@ -24,7 +24,7 @@
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=Full-Stack+Developer+%7C+MERN+Stack+Engineer;Building+AI-powered+automation+systems;FastAPI+%7C+Playwright+%7C+Python+%7C+React;Turning+ideas+into+production-ready+software" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=1000&color=6366F1&center=true&vCenter=true&width=750&lines=Full-Stack+Developer+%7C+MERN+Stack+Engineer;Building+AI-powered+automation+systems;FastAPI+%7C+Playwright+%7C+Python+%7C+React;Turning+ideas+into+production-ready+software" alt="Typing SVG"/>
 
 </div>
 
@@ -32,22 +32,22 @@
 
 # 👨‍💻 About Me
 
-I’m a **final-year B.Tech Computer Science student** at Vaagdevi College of Engineering, Warangal.
+I’m a **final-year B.Tech Computer Science Engineering student** at Vaagdevi College of Engineering, Warangal.
 
 I build scalable full-stack applications, AI-powered systems, automation workflows, REST APIs, and modern web platforms using the MERN stack and Python ecosystem.
 
-I enjoy solving real-world problems through software and focusing on:
+My interests include:
 
-- Production-ready development
-- Clean UI/UX
-- Backend architecture
-- AI & automation workflows
-- API development
-- Deployment & cloud hosting
+- Full-Stack Development
+- Backend Engineering
+- AI & Automation
+- REST API Development
+- Cloud Deployment
+- Testing & Automation
 
 Currently seeking:
 
-- Software Engineer Internships
+- Software Engineering Internships
 - Full-Stack Developer Roles
 - Backend Developer Roles
 - QA / SDET Opportunities
@@ -68,14 +68,15 @@ Currently seeking:
 ## Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 ## Frontend
 ![React](https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 
 ## Backend
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
@@ -85,6 +86,7 @@ Currently seeking:
 
 ## AI / Data
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/Deep_Learning-FF6F00?style=flat-square)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
@@ -108,65 +110,76 @@ Currently seeking:
 
 ## 📌 Team Task Manager — MERN Stack
 
-🔗 Live Demo: https://team-task-manager-wine.vercel.app  
-🔗 Repository: https://github.com/Ravikiran9988/team-task-manager
+🔗 Repository:  
+https://github.com/Ravikiran9988/team-task-manager
 
-A production-ready full-stack team collaboration platform built using the MERN stack.
+🔗 Live Demo:  
+https://team-task-manager-wine.vercel.app
+
+A production-ready full-stack collaboration platform with role-based access, task assignment, analytics, and project management features.
 
 ### Features
 - JWT Authentication & Role-Based Authorization
 - Admin & Member Dashboards
 - Project & Task Management
-- Task Progress Tracking
-- Real-Time Analytics Dashboard
-- Protected API Routes
+- Task Status Tracking
+- Analytics Dashboard
+- Protected Backend APIs
 - Cloud Deployment using Vercel & Render
 
 ### Tech Used
-`React` `Node.js` `Express.js` `MongoDB Atlas` `JWT`
+`React.js` `Node.js` `Express.js` `MongoDB Atlas` `JWT`
 
 ---
 
 ## 🤖 CAMX GTM Automation — AI Pipeline
 
-🔗 Repository: https://github.com/Ravikiran9988/camx-gtm-automation
+🔗 Repository:  
+https://github.com/Ravikiran9988/camx-gtm-automation
 
-An AI-powered automation pipeline that scrapes exhibitor data, enriches company information, generates personalized outreach messages using LLMs, and exports data directly into Google Sheets.
+An AI-powered automation pipeline that scrapes exhibitor data, enriches company information, generates personalized outreach messages using LLMs, and exports data into Google Sheets.
 
 ### Features
 - Dynamic data scraping using Playwright
 - AI-generated personalized outreach
 - Google Sheets integration
-- Multi-stage automation workflow
-- Browser automation & data enrichment
+- Browser automation workflow
+- Multi-stage AI pipeline
 
 ### Tech Used
 `Python` `Playwright` `Groq AI` `Prompt Engineering`
 
 ---
 
-## 🧴 Radiant Skincare — AI Recommendation System
+## 🧴 RadiantSkincare — Skin Disease Detection & Recommendation System
 
-An AI-powered skincare recommendation system integrating machine learning with a MERN stack frontend.
+🔗 Repository:  
+https://github.com/Ravikiran9988/RadiantSkincare
+
+A full-stack AI-powered skin disease detection and skincare recommendation platform using deep learning and Flask APIs.
 
 ### Features
-- Skin-type classification model
-- Personalized skincare recommendations
-- Flask ML API integration
-- User recommendation tracking
+- Skin disease detection using deep learning
+- Personalized skincare product recommendations
+- Health & skincare tips generation
+- Flask REST API integration
+- Full-stack frontend & backend architecture
 
 ### Tech Used
-`Python` `Scikit-learn` `Flask` `React.js` `MongoDB`
+`Python` `Flask` `Deep Learning` `React.js` `Node.js` `MongoDB`
 
 ---
 
-## 🆘 Women Safety App — React Native
+## 🆘 Women Safety Application — React Native
 
-A cross-platform emergency safety application with real-time GPS-based SOS alerts.
+🔗 Repository:  
+https://github.com/Ravikiran9988/Women_Safety_Application
+
+A cross-platform emergency safety application with real-time GPS-based SOS alerts and emergency contact notifications.
 
 ### Features
 - One-tap SOS emergency alerts
-- Live GPS location tracking
+- Real-time GPS location tracking
 - Emergency contact notifications
 - Admin monitoring dashboard
 
@@ -175,18 +188,22 @@ A cross-platform emergency safety application with real-time GPS-based SOS alert
 
 ---
 
-## 🍔 Food Delivery API — FastAPI
+## ✈️ TravelEase — Travel Booking Platform
 
-A backend REST API system built with FastAPI covering food ordering workflows.
+🔗 Repository:  
+https://github.com/Ravikiran9988/TravelEase
+
+A web-based travel booking and management platform developed using PHP and MySQL.
 
 ### Features
-- Async API endpoints
-- CRUD operations
-- Swagger API documentation
-- Request validation using Pydantic
+- Travel package management
+- Booking system
+- User authentication
+- Responsive frontend interface
+- Database-driven backend operations
 
 ### Tech Used
-`Python` `FastAPI` `Pydantic`
+`PHP` `MySQL` `HTML` `CSS` `JavaScript`
 
 ---
 
@@ -207,6 +224,12 @@ A backend REST API system built with FastAPI covering food ordering workflows.
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=Ravikiran9988&show_icons=true&theme=tokyonight&hide_border=true"/>
 
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ravikiran9988&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Ravikiran9988&theme=tokyonight&hide_border=true"/>
 
 </div>
 
