@@ -35,7 +35,7 @@
 
 ## 👋 About Me
 
-Hey, I'm **Ravi Kiran** — a final-year CSE student at **Vaagdevi College of Engineering, Warangal**.
+Hey, I'm **Ravi Kiran** — a CSE student at **Vaagdevi College of Engineering, Warangal**.
 
 I genuinely love building projects. Not because I have to, but because I enjoy seeing an idea turn into something real that actually works. I'm always experimenting with new tech — whether it's building an AI automation pipeline, a mobile safety app, or training a skin disease model.
 
