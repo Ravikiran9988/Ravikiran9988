@@ -267,11 +267,9 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 ## 📊 GitHub Stats
 
+## 📊 GitHub Stats
+
 <div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Ravikiran9988&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=15" />
-
-<br/><br/>
 
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=Ravikiran9988&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff&icon_color=00c2ff" />
 
@@ -285,8 +283,13 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
 
-</div>
+<br/><br/>
 
+<h3>🔥 Contribution Heatmap</h3>
+
+<img src="https://ghchart.rshah.org/00c2ff/Ravikiran9988" alt="GitHub Contribution Heatmap" />
+
+</div>
 ---
 
 ## 🤝 Let's Connect
