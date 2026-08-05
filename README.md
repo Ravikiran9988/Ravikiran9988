@@ -269,20 +269,21 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <div align="center">
 
+<img src="https://github-profile-trophy.vercel.app/?username=Ravikiran9988&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=15" />
+
+<br/><br/>
+
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=Ravikiran9988&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff&icon_color=00c2ff" />
+
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ravikiran9988&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff" />
 
-<br/>
+<br/><br/>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ravikiran9988&theme=tokyonight&hide_border=true&border_radius=10&ring=00c2ff&fire=f72585&currStreakLabel=00c2ff" />
 
-<br/>
+<br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
-
-<br/>
-
-<img src="https://ghchart.rshah.org/00c2ff/Ravikiran9988" alt="Ravi Kiran's GitHub contribution calendar" />
 
 </div>
 
