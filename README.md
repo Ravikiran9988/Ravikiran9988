@@ -267,8 +267,6 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 ## 📊 GitHub Stats
 
-## 📊 GitHub Stats
-
 <div align="center">
 
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=Ravikiran9988&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff&icon_color=00c2ff" />
