@@ -280,6 +280,10 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
 
+<br/>
+
+<img src="https://ghchart.rshah.org/00c2ff/Ravikiran9988" alt="Ravi Kiran's GitHub contribution calendar" />
+
 </div>
 
 ---
