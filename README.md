@@ -43,7 +43,7 @@ I pick things up fast, and I use **AI tools well** to build faster without cutti
 
 **Currently looking for:**
 
-```
+```text
 → Full-Stack Development (MERN)
 → Backend / API Engineering (Python, FastAPI)
 → AI / Agentic AI Engineering
@@ -140,8 +140,6 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 ## 🚀 Featured Projects
 
 > 💡 *See all projects with live demos on my [portfolio](https://ravikiran9988.github.io/portfolio/)*
-
-<br/>
 
 ### 🎯 LeadDesk AI — MERN CRM with AI-Assisted Lead Management
 
@@ -273,11 +271,17 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
 
+<br/>
+
 <img width="900" src="./assets/top-languages.svg" alt="Top Languages" />
+
+<br/>
 
 <img width="900" src="./assets/activity.svg" alt="Contribution Activity" />
 
 </div>
+
+---
 
 ## 🤝 Let's Connect
 
@@ -291,11 +295,7 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 | 🔗 | [linkedin.com/in/medicharla-ravi-kiran](https://linkedin.com/in/medicharla-ravi-kiran-565a872b5) |
 | 💻 | [github.com/Ravikiran9988](https://github.com/Ravikiran9988) |
 
-<br/>
-
 *I reply fast. If you think I'd be a good fit for your team, or just want to talk about a project — message me. I'm always up for it.*
-
-<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c2ff,50:0a2a4a,100:0a0a0f&height=140&section=footer" />
 
