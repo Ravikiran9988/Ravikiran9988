@@ -3,6 +3,9 @@ name: Update Profile Cards
 on:
   push:
     branches: [master]
+    paths:
+      - "scripts/generate_profile_cards.py"
+      - ".github/workflows/update-profile-cards.yml"
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
