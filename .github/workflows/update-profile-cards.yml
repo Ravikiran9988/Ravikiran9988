@@ -1,6 +1,8 @@
 name: Update Profile Cards
 
 on:
+  push:
+    branches: [master]
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
@@ -14,14 +16,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Generate cards
+      - name: Generate self-hosted cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_profile_cards.py
-      - name: Commit updated cards
+      - name: Replace third-party stats cards
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("README.md")
+          s = p.read_text()
+          s = s.replace('https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook', './assets/top-languages.svg')
+          s = s.replace('https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585', './assets/activity.svg')
+          p.write_text(s)
+          PY
+      - name: Commit updated cards and README
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/top-languages.svg assets/activity.svg
-          git diff --cached --quiet || git commit -m "chore: update profile cards"
+          git add README.md assets/top-languages.svg assets/activity.svg
+          git diff --cached --quiet || git commit -m "chore: customize profile cards"
           git push
