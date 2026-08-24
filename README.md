@@ -275,10 +275,6 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Ravikiran9988&theme=tokyonight&hide_border=true&border_radius=10&ring=00c2ff&fire=f72585&currStreakLabel=00c2ff" />
-
-<br/><br/>
-
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
 
 </div>
