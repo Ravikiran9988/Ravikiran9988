@@ -127,7 +127,7 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496DB?style=for-the-badge&logo=docker&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
@@ -171,7 +171,7 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496DB?style=flat-square&logo=docker&logoColor=white)
 
 - ✅ Snapshot-stable keyset pagination under concurrent writes
 - ✅ Async SQLAlchemy 2.0 + Alembic migrations
@@ -269,9 +269,9 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Ravikiran9988&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff&icon_color=00c2ff&cache_seconds=1800" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ravikiran9988&theme=tokyonight" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ravikiran9988&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&border_radius=10&title_color=00c2ff&cache_seconds=1800" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook" />
 
 <br/><br/>
 
