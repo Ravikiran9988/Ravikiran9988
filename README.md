@@ -18,7 +18,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2400&pause=900&color=00C2FF&center=true&vCenter=true&width=850&lines=CSE+%40+Vaagdevi+College+of+Engineering;Agentic+AI+Intern+%40+Innomatics+Research+Labs;MERN+Stack+%7C+Python+%7C+LangChain+%7C+FastAPI;I+build+things+that+actually+ship;Check+out+my+portfolio+%F0%9F%91%87" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2400&pause=900&color=00C2FF&center=true&vCenter=true&width=850&lines=B.Tech+CSE+Graduate+%40+Vaagdevi+College+of+Engineering;Agentic+AI+Intern+%40+Innomatics+Research+Labs;MERN+Stack+%7C+Python+%7C+LangChain+%7C+FastAPI;I+build+things+that+actually+ship;Check+out+my+portfolio+%F0%9F%91%87" alt="Typing SVG" />
 
 </div>
 
@@ -35,7 +35,7 @@
 
 ## 👋 About Me
 
-Hey, I'm **Ravi Kiran** — a CSE student at **Vaagdevi College of Engineering, Warangal**, currently working as an **Agentic AI Intern at Innomatics Research Labs**, where I build multi-step LLM pipelines with LangChain, LangGraph, and RAG.
+Hey, I'm **Ravi Kiran** — a **B.Tech CSE graduate from Vaagdevi College of Engineering, Warangal**, with experience as an **Agentic AI Intern at Innomatics Research Labs**, where I worked on multi-step LLM pipelines with LangChain, LangGraph, and RAG.
 
 I love turning ideas into things that actually work — an AI-assisted CRM with real test coverage, an automation pipeline that replaces manual prospecting, a deep learning model that reads skin conditions from a photo. I don't just write code — I ship it, test it, and deploy it.
 
@@ -46,7 +46,8 @@ I pick things up fast, and I use **AI tools well** to build faster without cutti
 ```
 → Full-Stack Development (MERN)
 → Backend / API Engineering (Python, FastAPI)
-→ AI / Automation Engineering
+→ AI / Agentic AI Engineering
+→ Software Testing & Automation
 ```
 
 ---
@@ -65,9 +66,10 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <div align="center">
 
+🚀 8+ production-focused projects
 ⭐ 30+ GitHub repositories
-🚀 6+ Full Stack projects
 🤖 AI Automation & Agentic AI
+🧪 Playwright E2E Testing & CI
 📱 React Native + MERN
 🐍 Python & FastAPI
 
@@ -271,11 +273,9 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
 
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook" />
+<img width="900" src="./assets/top-languages.svg" alt="Top Languages" />
 
-<br/><br/>
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
+<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />
 
 </div>
 
