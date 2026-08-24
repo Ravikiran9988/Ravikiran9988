@@ -269,7 +269,7 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <div align="center">
 
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ravikiran9988&theme=tokyonight" />
+<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
 
 <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook" />
 
