@@ -6,6 +6,7 @@ on:
     paths:
       - "scripts/generate_profile_cards.py"
       - ".github/workflows/update-profile-cards.yml"
+      - "README.md"
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
@@ -25,28 +26,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_profile_cards.py
 
-      - name: Enforce self-hosted cards and spacing
+      - name: Polish README and enforce self-hosted cards
         run: |
           python - <<'PY'
           from pathlib import Path
           import re
-
           p = Path("README.md")
           s = p.read_text(encoding="utf-8")
 
-          # Replace any remaining third-party stats-card images with local SVGs.
-          s = re.sub(
-              r'<img[^>]*src="https://github-profile-summary-cards\\.vercel\\.app/api/cards/repos-per-language[^>]*>',
-              '<img width="900" src="./assets/top-languages.svg" alt="Top Languages" />',
-              s,
-          )
-          s = re.sub(
-              r'<img[^>]*src="https://github-readme-activity-graph\\.vercel\\.app/graph[^>]*>',
-              '<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />',
-              s,
-          )
+          s = s.replace("CSE+%40+Vaagdevi+College+of+Engineering", "B.Tech+CSE+Graduate")
+          s = s.replace("CSE student at **Vaagdevi College of Engineering, Warangal**", "B.Tech CSE graduate from **Vaagdevi College of Engineering, Warangal**")
+          s = s.replace("currently working as an **Agentic AI Intern at Innomatics Research Labs**", "recently worked as an **Agentic AI Intern at Innomatics Research Labs**")
+          s = s.replace("→ Full-Stack Development (MERN)\n→ Backend / API Engineering (Python, FastAPI)\n→ AI / Automation Engineering", "→ Full-Stack Development (MERN)\n→ Backend / API Engineering (Python, FastAPI)\n→ AI / Agentic AI Engineering\n→ Software Testing & Automation")
+          s = s.replace("⭐ 30+ GitHub repositories\n🚀 6+ Full Stack projects\n🤖 AI Automation & Agentic AI\n📱 React Native + MERN\n🐍 Python & FastAPI", "🚀 8+ Production-focused projects\n📦 30+ GitHub repositories\n🤖 AI & Agentic AI Engineering\n🧪 Playwright E2E & Test Automation\n⚡ Full-Stack & Backend Engineering")
 
-          # Normalize the complete stats section so spacing and widths stay consistent.
           start = s.find("## 📊 GitHub Stats")
           end = s.find("## 🤝 Let's Connect", start)
           if start != -1 and end != -1:
@@ -72,20 +65,17 @@ jobs:
           p.write_text(s, encoding="utf-8")
           PY
 
-      - name: Verify no third-party stats cards remain
+      - name: Verify profile README
         run: |
-          if grep -Eq 'github-profile-summary-cards\\.vercel\\.app|github-readme-activity-graph\\.vercel\\.app|github-readme-stats\\.vercel\\.app|github-readme-streak-stats\\.' README.md; then
-            echo "Third-party stats card URL still present in README.md"
-            exit 1
-          fi
-          test -f assets/github-stats.svg
-          test -f assets/top-languages.svg
-          test -f assets/activity.svg
+          ! grep -Eqi 'github-profile-summary-cards\.vercel\.app|github-readme-activity-graph\.vercel\.app|github-readme-stats\.vercel\.app|github-readme-streak-stats\.' README.md
+          test -s assets/github-stats.svg
+          test -s assets/top-languages.svg
+          test -s assets/activity.svg
 
       - name: Commit updated cards and README
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets/github-stats.svg assets/top-languages.svg assets/activity.svg
-          git diff --cached --quiet || git commit -m "fix: use self-hosted profile cards"
+          git diff --cached --quiet || git commit -m "fix: polish profile README and self-hosted cards"
           git push
