@@ -19,24 +19,57 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Generate self-hosted cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_profile_cards.py
-      - name: Replace third-party stats cards
+
+      - name: Normalize profile card layout
         run: |
           python - <<'PY'
           from pathlib import Path
+
           p = Path("README.md")
-          s = p.read_text()
-          s = s.replace('https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook', './assets/top-languages.svg')
-          s = s.replace('https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585', './assets/activity.svg')
-          p.write_text(s)
+          s = p.read_text(encoding="utf-8")
+
+          # Remove old third-party card URLs if they are still present.
+          s = s.replace(
+              'https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook',
+              './assets/top-languages.svg'
+          )
+          s = s.replace(
+              'https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585',
+              './assets/activity.svg'
+          )
+
+          # Keep all three custom cards the same width with compact, predictable spacing.
+          old = '''<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
+
+<img height="180em" src="./assets/top-languages.svg" />
+
+<br/><br/>
+
+<img width="100%" src="./assets/activity.svg" />'''
+
+          new = '''<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
+
+<br/>
+
+<img width="900" src="./assets/top-languages.svg" alt="Top Languages" />
+
+<br/>
+
+<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />'''
+
+          s = s.replace(old, new)
+          p.write_text(s, encoding="utf-8")
           PY
+
       - name: Commit updated cards and README
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets/top-languages.svg assets/activity.svg
-          git diff --cached --quiet || git commit -m "chore: customize profile cards"
+          git diff --cached --quiet || git commit -m "style: fix profile card spacing"
           git push
