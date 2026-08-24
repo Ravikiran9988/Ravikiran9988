@@ -25,34 +25,36 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_profile_cards.py
 
-      - name: Normalize profile card layout
+      - name: Enforce self-hosted cards and spacing
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           p = Path("README.md")
           s = p.read_text(encoding="utf-8")
 
-          # Remove old third-party card URLs if they are still present.
-          s = s.replace(
-              'https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook',
-              './assets/top-languages.svg'
+          # Replace any remaining third-party stats-card images with local SVGs.
+          s = re.sub(
+              r'<img[^>]*src="https://github-profile-summary-cards\\.vercel\\.app/api/cards/repos-per-language[^>]*>',
+              '<img width="900" src="./assets/top-languages.svg" alt="Top Languages" />',
+              s,
           )
-          s = s.replace(
-              'https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585',
-              './assets/activity.svg'
+          s = re.sub(
+              r'<img[^>]*src="https://github-readme-activity-graph\\.vercel\\.app/graph[^>]*>',
+              '<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />',
+              s,
           )
 
-          # Keep all three custom cards the same width with compact, predictable spacing.
-          old = '''<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
+          # Normalize the complete stats section so spacing and widths stay consistent.
+          start = s.find("## 📊 GitHub Stats")
+          end = s.find("## 🤝 Let's Connect", start)
+          if start != -1 and end != -1:
+              section = '''## 📊 GitHub Stats
 
-<img height="180em" src="./assets/top-languages.svg" />
+<div align="center">
 
-<br/><br/>
-
-<img width="100%" src="./assets/activity.svg" />'''
-
-          new = '''<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
+<img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
 
 <br/>
 
@@ -60,16 +62,30 @@ jobs:
 
 <br/>
 
-<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />'''
+<img width="900" src="./assets/activity.svg" alt="Contribution Activity" />
 
-          s = s.replace(old, new)
+</div>
+
+'''
+              s = s[:start] + section + s[end:]
+
           p.write_text(s, encoding="utf-8")
           PY
+
+      - name: Verify no third-party stats cards remain
+        run: |
+          if grep -Eq 'github-profile-summary-cards\\.vercel\\.app|github-readme-activity-graph\\.vercel\\.app|github-readme-stats\\.vercel\\.app|github-readme-streak-stats\\.' README.md; then
+            echo "Third-party stats card URL still present in README.md"
+            exit 1
+          fi
+          test -f assets/github-stats.svg
+          test -f assets/top-languages.svg
+          test -f assets/activity.svg
 
       - name: Commit updated cards and README
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/top-languages.svg assets/activity.svg
-          git diff --cached --quiet || git commit -m "style: fix profile card spacing"
+          git add README.md assets/github-stats.svg assets/top-languages.svg assets/activity.svg
+          git diff --cached --quiet || git commit -m "fix: use self-hosted profile cards"
           git push
