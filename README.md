@@ -271,11 +271,11 @@ Built a production-ready MERN application end-to-end — React UI, Node/Express 
 
 <img width="900" src="./assets/github-stats.svg" alt="GitHub Stats" />
 
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ravikiran9988&theme=tokyonight&exclude=Jupyter%20Notebook" />
+<img height="180em" src="./assets/top-languages.svg" />
 
 <br/><br/>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ravikiran9988&theme=tokyo-night&hide_border=true&radius=10&color=00c2ff&line=00c2ff&point=f72585" />
+<img width="100%" src="./assets/activity.svg" />
 
 </div>
 
